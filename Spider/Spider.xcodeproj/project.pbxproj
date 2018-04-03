@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		045AB2C7206B425F00ADD732 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045AB2C6206B425F00ADD732 /* AppDelegate.m */; };
+		045AB2C9206B425F00ADD732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045AB2C8206B425F00ADD732 /* Assets.xcassets */; };
+		045AB2CF206B425F00ADD732 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045AB2CE206B425F00ADD732 /* main.m */; };
+		045AB2DC206B427A00ADD732 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045AB2DB206B427A00ADD732 /* AppDelegate.m */; };
+		045AB2DF206B427A00ADD732 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045AB2DE206B427A00ADD732 /* ViewController.m */; };
+		045AB2E2206B427A00ADD732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045AB2E0206B427A00ADD732 /* Main.storyboard */; };
+		045AB2E4206B427A00ADD732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045AB2E3206B427A00ADD732 /* Assets.xcassets */; };
+		045AB2E7206B427A00ADD732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045AB2E5206B427A00ADD732 /* LaunchScreen.storyboard */; };
+		045AB2EA206B427A00ADD732 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045AB2E9206B427A00ADD732 /* main.m */; };
+		045AB2F5206B5DD500ADD732 /* KSSpiderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045AB2F4206B5DD500ADD732 /* KSSpiderController.m */; };
+		045AB2FF206B62C800ADD732 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045AB2FE206B62C800ADD732 /* MainMenu.xib */; };
+		045AB305206B877E00ADD732 /* libPods-Spider-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFAE78180FF7264A4D1150F /* libPods-Spider-Mac.a */; };
+		045AB30C206B8E2300ADD732 /* Spider.m in Sources */ = {isa = PBXBuildFile; fileRef = 045AB30B206B8E2300ADD732 /* Spider.m */; };
+		04F6B285206B9CAF009095E8 /* SpiderOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F6B284206B9CAF009095E8 /* SpiderOption.m */; };
+		04F6B287206CB4EB009095E8 /* Spider.m in Sources */ = {isa = PBXBuildFile; fileRef = 045AB30B206B8E2300ADD732 /* Spider.m */; };
+		04F6B288206CB4EB009095E8 /* SpiderOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F6B284206B9CAF009095E8 /* SpiderOption.m */; };
+		D94B0677B712C56B61B0B3AD /* libPods-Spider-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2A4FCF93DCC755B6C8A5C9 /* libPods-Spider-iOS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		045AB2C2206B425F00ADD732 /* Spider-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spider-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		045AB2C5206B425F00ADD732 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		045AB2C6206B425F00ADD732 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		045AB2C8206B425F00ADD732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		045AB2CD206B425F00ADD732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045AB2CE206B425F00ADD732 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		045AB2D0206B425F00ADD732 /* Spider_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Spider_Mac.entitlements; sourceTree = "<group>"; };
+		045AB2D8206B427A00ADD732 /* Spider-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spider-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		045AB2DA206B427A00ADD732 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		045AB2DB206B427A00ADD732 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		045AB2DD206B427A00ADD732 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		045AB2DE206B427A00ADD732 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		045AB2E1206B427A00ADD732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		045AB2E3206B427A00ADD732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		045AB2E6206B427A00ADD732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		045AB2E8206B427A00ADD732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045AB2E9206B427A00ADD732 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		045AB2F3206B5DD500ADD732 /* KSSpiderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSSpiderController.h; sourceTree = "<group>"; };
+		045AB2F4206B5DD500ADD732 /* KSSpiderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSSpiderController.m; sourceTree = "<group>"; };
+		045AB2FE206B62C800ADD732 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		045AB304206B876900ADD732 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		045AB30A206B8E2300ADD732 /* Spider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Spider.h; sourceTree = "<group>"; };
+		045AB30B206B8E2300ADD732 /* Spider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Spider.m; sourceTree = "<group>"; };
+		04F6B283206B9CAF009095E8 /* SpiderOption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpiderOption.h; sourceTree = "<group>"; };
+		04F6B284206B9CAF009095E8 /* SpiderOption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpiderOption.m; sourceTree = "<group>"; };
+		3613BDAAB3DE035A96D7BAD7 /* Pods-Spider-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spider-Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spider-Mac/Pods-Spider-Mac.release.xcconfig"; sourceTree = "<group>"; };
+		47EB9FB7C6E3E8F5353B7162 /* Pods-Spider-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spider-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spider-iOS/Pods-Spider-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		8697F5E5553FE37F3113FB9A /* Pods-Spider-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spider-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spider-iOS/Pods-Spider-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		AFFAE78180FF7264A4D1150F /* libPods-Spider-Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Spider-Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2A4FCF93DCC755B6C8A5C9 /* libPods-Spider-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Spider-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6DD9DACAF5583BEA7AF9E0 /* Pods-Spider-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spider-Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spider-Mac/Pods-Spider-Mac.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		045AB2BF206B425F00ADD732 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045AB305206B877E00ADD732 /* libPods-Spider-Mac.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045AB2D5206B427A00ADD732 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94B0677B712C56B61B0B3AD /* libPods-Spider-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		045AB2B7206B425500ADD732 = {
+			isa = PBXGroup;
+			children = (
+				045AB306206B8B2100ADD732 /* Common */,
+				045AB2C4206B425F00ADD732 /* Spider-Mac */,
+				045AB2D9206B427A00ADD732 /* Spider-iOS */,
+				045AB2C3206B425F00ADD732 /* Products */,
+				A0A86FBDDC50790026FF6CDB /* Pods */,
+				4791C57DB841A3AF9AA59E90 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		045AB2C3206B425F00ADD732 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				045AB2C2206B425F00ADD732 /* Spider-Mac.app */,
+				045AB2D8206B427A00ADD732 /* Spider-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		045AB2C4206B425F00ADD732 /* Spider-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				045AB2C5206B425F00ADD732 /* AppDelegate.h */,
+				045AB2C6206B425F00ADD732 /* AppDelegate.m */,
+				045AB2F3206B5DD500ADD732 /* KSSpiderController.h */,
+				045AB2F4206B5DD500ADD732 /* KSSpiderController.m */,
+				045AB2FE206B62C800ADD732 /* MainMenu.xib */,
+				045AB2C8206B425F00ADD732 /* Assets.xcassets */,
+				045AB2CD206B425F00ADD732 /* Info.plist */,
+				045AB2CE206B425F00ADD732 /* main.m */,
+				045AB2D0206B425F00ADD732 /* Spider_Mac.entitlements */,
+			);
+			path = "Spider-Mac";
+			sourceTree = "<group>";
+		};
+		045AB2D9206B427A00ADD732 /* Spider-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				045AB2DA206B427A00ADD732 /* AppDelegate.h */,
+				045AB2DB206B427A00ADD732 /* AppDelegate.m */,
+				045AB2DD206B427A00ADD732 /* ViewController.h */,
+				045AB2DE206B427A00ADD732 /* ViewController.m */,
+				045AB2E0206B427A00ADD732 /* Main.storyboard */,
+				045AB2E3206B427A00ADD732 /* Assets.xcassets */,
+				045AB2E5206B427A00ADD732 /* LaunchScreen.storyboard */,
+				045AB2E8206B427A00ADD732 /* Info.plist */,
+				045AB2E9206B427A00ADD732 /* main.m */,
+			);
+			path = "Spider-iOS";
+			sourceTree = "<group>";
+		};
+		045AB306206B8B2100ADD732 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				045AB30A206B8E2300ADD732 /* Spider.h */,
+				045AB30B206B8E2300ADD732 /* Spider.m */,
+				04F6B283206B9CAF009095E8 /* SpiderOption.h */,
+				04F6B284206B9CAF009095E8 /* SpiderOption.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4791C57DB841A3AF9AA59E90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				045AB304206B876900ADD732 /* libAFNetworking.a */,
+				AFFAE78180FF7264A4D1150F /* libPods-Spider-Mac.a */,
+				BE2A4FCF93DCC755B6C8A5C9 /* libPods-Spider-iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0A86FBDDC50790026FF6CDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB6DD9DACAF5583BEA7AF9E0 /* Pods-Spider-Mac.debug.xcconfig */,
+				3613BDAAB3DE035A96D7BAD7 /* Pods-Spider-Mac.release.xcconfig */,
+				8697F5E5553FE37F3113FB9A /* Pods-Spider-iOS.debug.xcconfig */,
+				47EB9FB7C6E3E8F5353B7162 /* Pods-Spider-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		045AB2C1206B425F00ADD732 /* Spider-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045AB2D1206B425F00ADD732 /* Build configuration list for PBXNativeTarget "Spider-Mac" */;
+			buildPhases = (
+				E54A30D434ADF94299747875 /* [CP] Check Pods Manifest.lock */,
+				045AB2BE206B425F00ADD732 /* Sources */,
+				045AB2BF206B425F00ADD732 /* Frameworks */,
+				045AB2C0206B425F00ADD732 /* Resources */,
+				C1E3D166D533077A3AC46C32 /* [CP] Embed Pods Frameworks */,
+				E2A13B846A0B04BD6DB6651C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Spider-Mac";
+			productName = "Spider-Mac";
+			productReference = 045AB2C2206B425F00ADD732 /* Spider-Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		045AB2D7206B427A00ADD732 /* Spider-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045AB2EB206B427A00ADD732 /* Build configuration list for PBXNativeTarget "Spider-iOS" */;
+			buildPhases = (
+				3C472DBF95B99B4E7C16CCC1 /* [CP] Check Pods Manifest.lock */,
+				045AB2D4206B427A00ADD732 /* Sources */,
+				045AB2D5206B427A00ADD732 /* Frameworks */,
+				045AB2D6206B427A00ADD732 /* Resources */,
+				479127EC4E0753E980744AB6 /* [CP] Embed Pods Frameworks */,
+				E3DC72202C5EBE3DC9C57BA3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Spider-iOS";
+			productName = "Spider-iOS";
+			productReference = 045AB2D8206B427A00ADD732 /* Spider-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		045AB2B8206B425500ADD732 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					045AB2C1206B425F00ADD732 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					045AB2D7206B427A00ADD732 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 045AB2BB206B425500ADD732 /* Build configuration list for PBXProject "Spider" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 045AB2B7206B425500ADD732;
+			productRefGroup = 045AB2C3206B425F00ADD732 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				045AB2C1206B425F00ADD732 /* Spider-Mac */,
+				045AB2D7206B427A00ADD732 /* Spider-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		045AB2C0206B425F00ADD732 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045AB2C9206B425F00ADD732 /* Assets.xcassets in Resources */,
+				045AB2FF206B62C800ADD732 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045AB2D6206B427A00ADD732 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045AB2E7206B427A00ADD732 /* LaunchScreen.storyboard in Resources */,
+				045AB2E4206B427A00ADD732 /* Assets.xcassets in Resources */,
+				045AB2E2206B427A00ADD732 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C472DBF95B99B4E7C16CCC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spider-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		479127EC4E0753E980744AB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spider-iOS/Pods-Spider-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1E3D166D533077A3AC46C32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spider-Mac/Pods-Spider-Mac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2A13B846A0B04BD6DB6651C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spider-Mac/Pods-Spider-Mac-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3DC72202C5EBE3DC9C57BA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spider-iOS/Pods-Spider-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E54A30D434ADF94299747875 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spider-Mac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		045AB2BE206B425F00ADD732 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045AB2F5206B5DD500ADD732 /* KSSpiderController.m in Sources */,
+				045AB2CF206B425F00ADD732 /* main.m in Sources */,
+				04F6B285206B9CAF009095E8 /* SpiderOption.m in Sources */,
+				045AB2C7206B425F00ADD732 /* AppDelegate.m in Sources */,
+				045AB30C206B8E2300ADD732 /* Spider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045AB2D4206B427A00ADD732 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045AB2DF206B427A00ADD732 /* ViewController.m in Sources */,
+				045AB2EA206B427A00ADD732 /* main.m in Sources */,
+				04F6B288206CB4EB009095E8 /* SpiderOption.m in Sources */,
+				045AB2DC206B427A00ADD732 /* AppDelegate.m in Sources */,
+				04F6B287206CB4EB009095E8 /* Spider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		045AB2E0206B427A00ADD732 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045AB2E1206B427A00ADD732 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		045AB2E5206B427A00ADD732 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045AB2E6206B427A00ADD732 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		045AB2BC206B425500ADD732 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		045AB2BD206B425500ADD732 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+			};
+			name = Release;
+		};
+		045AB2D2206B425F00ADD732 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB6DD9DACAF5583BEA7AF9E0 /* Pods-Spider-Mac.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Spider-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "ruipeng.Spider-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		045AB2D3206B425F00ADD732 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3613BDAAB3DE035A96D7BAD7 /* Pods-Spider-Mac.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Spider-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "ruipeng.Spider-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		045AB2EC206B427A00ADD732 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8697F5E5553FE37F3113FB9A /* Pods-Spider-iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Spider-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "ruipeng.Spider-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		045AB2ED206B427A00ADD732 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47EB9FB7C6E3E8F5353B7162 /* Pods-Spider-iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Spider-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "ruipeng.Spider-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		045AB2BB206B425500ADD732 /* Build configuration list for PBXProject "Spider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045AB2BC206B425500ADD732 /* Debug */,
+				045AB2BD206B425500ADD732 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045AB2D1206B425F00ADD732 /* Build configuration list for PBXNativeTarget "Spider-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045AB2D2206B425F00ADD732 /* Debug */,
+				045AB2D3206B425F00ADD732 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045AB2EB206B427A00ADD732 /* Build configuration list for PBXNativeTarget "Spider-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045AB2EC206B427A00ADD732 /* Debug */,
+				045AB2ED206B427A00ADD732 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 045AB2B8206B425500ADD732 /* Project object */;
+}
