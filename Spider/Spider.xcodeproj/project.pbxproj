@@ -12,7 +12,6 @@
 		045AB2CF206B425F00ADD732 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045AB2CE206B425F00ADD732 /* main.m */; };
 		045AB2DC206B427A00ADD732 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045AB2DB206B427A00ADD732 /* AppDelegate.m */; };
 		045AB2DF206B427A00ADD732 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045AB2DE206B427A00ADD732 /* ViewController.m */; };
-		045AB2E2206B427A00ADD732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045AB2E0206B427A00ADD732 /* Main.storyboard */; };
 		045AB2E4206B427A00ADD732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045AB2E3206B427A00ADD732 /* Assets.xcassets */; };
 		045AB2E7206B427A00ADD732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045AB2E5206B427A00ADD732 /* LaunchScreen.storyboard */; };
 		045AB2EA206B427A00ADD732 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045AB2E9206B427A00ADD732 /* main.m */; };
@@ -20,6 +19,8 @@
 		045AB2FF206B62C800ADD732 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045AB2FE206B62C800ADD732 /* MainMenu.xib */; };
 		045AB305206B877E00ADD732 /* libPods-Spider-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFAE78180FF7264A4D1150F /* libPods-Spider-Mac.a */; };
 		045AB30C206B8E2300ADD732 /* Spider.m in Sources */ = {isa = PBXBuildFile; fileRef = 045AB30B206B8E2300ADD732 /* Spider.m */; };
+		0499964B2074D4F800B6667E /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499964A2074D4F800B6667E /* CollectionViewCell.m */; };
+		0499964E2074DDE700B6667E /* DetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0499964D2074DDE700B6667E /* DetailController.m */; };
 		04F6B285206B9CAF009095E8 /* SpiderOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F6B284206B9CAF009095E8 /* SpiderOption.m */; };
 		04F6B287206CB4EB009095E8 /* Spider.m in Sources */ = {isa = PBXBuildFile; fileRef = 045AB30B206B8E2300ADD732 /* Spider.m */; };
 		04F6B288206CB4EB009095E8 /* SpiderOption.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F6B284206B9CAF009095E8 /* SpiderOption.m */; };
@@ -39,7 +40,6 @@
 		045AB2DB206B427A00ADD732 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		045AB2DD206B427A00ADD732 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		045AB2DE206B427A00ADD732 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		045AB2E1206B427A00ADD732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		045AB2E3206B427A00ADD732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045AB2E6206B427A00ADD732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		045AB2E8206B427A00ADD732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +50,10 @@
 		045AB304206B876900ADD732 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		045AB30A206B8E2300ADD732 /* Spider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Spider.h; sourceTree = "<group>"; };
 		045AB30B206B8E2300ADD732 /* Spider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Spider.m; sourceTree = "<group>"; };
+		049996492074D4F800B6667E /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		0499964A2074D4F800B6667E /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		0499964C2074DDE700B6667E /* DetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailController.h; sourceTree = "<group>"; };
+		0499964D2074DDE700B6667E /* DetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailController.m; sourceTree = "<group>"; };
 		04F6B283206B9CAF009095E8 /* SpiderOption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpiderOption.h; sourceTree = "<group>"; };
 		04F6B284206B9CAF009095E8 /* SpiderOption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpiderOption.m; sourceTree = "<group>"; };
 		3613BDAAB3DE035A96D7BAD7 /* Pods-Spider-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spider-Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spider-Mac/Pods-Spider-Mac.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,7 +128,10 @@
 				045AB2DB206B427A00ADD732 /* AppDelegate.m */,
 				045AB2DD206B427A00ADD732 /* ViewController.h */,
 				045AB2DE206B427A00ADD732 /* ViewController.m */,
-				045AB2E0206B427A00ADD732 /* Main.storyboard */,
+				0499964C2074DDE700B6667E /* DetailController.h */,
+				0499964D2074DDE700B6667E /* DetailController.m */,
+				049996492074D4F800B6667E /* CollectionViewCell.h */,
+				0499964A2074D4F800B6667E /* CollectionViewCell.m */,
 				045AB2E3206B427A00ADD732 /* Assets.xcassets */,
 				045AB2E5206B427A00ADD732 /* LaunchScreen.storyboard */,
 				045AB2E8206B427A00ADD732 /* Info.plist */,
@@ -261,7 +268,6 @@
 			files = (
 				045AB2E7206B427A00ADD732 /* LaunchScreen.storyboard in Resources */,
 				045AB2E4206B427A00ADD732 /* Assets.xcassets in Resources */,
-				045AB2E2206B427A00ADD732 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,8 +389,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0499964B2074D4F800B6667E /* CollectionViewCell.m in Sources */,
 				045AB2DF206B427A00ADD732 /* ViewController.m in Sources */,
 				045AB2EA206B427A00ADD732 /* main.m in Sources */,
+				0499964E2074DDE700B6667E /* DetailController.m in Sources */,
 				04F6B288206CB4EB009095E8 /* SpiderOption.m in Sources */,
 				045AB2DC206B427A00ADD732 /* AppDelegate.m in Sources */,
 				04F6B287206CB4EB009095E8 /* Spider.m in Sources */,
@@ -394,14 +402,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		045AB2E0206B427A00ADD732 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				045AB2E1206B427A00ADD732 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		045AB2E5206B427A00ADD732 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

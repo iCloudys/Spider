@@ -14,13 +14,18 @@ PODS:
   - AFNetworking/Serialization (3.2.0)
   - AFNetworking/UIKit (3.2.0):
     - AFNetworking/NSURLSession
+  - SDWebImage (4.3.3):
+    - SDWebImage/Core (= 4.3.3)
+  - SDWebImage/Core (4.3.3)
 
 DEPENDENCIES:
   - AFNetworking
+  - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
 
-PODFILE CHECKSUM: f7637428eca160c44d6e294ea9a692ed95447de8
+PODFILE CHECKSUM: 6fc3bf9f9497f1a679ff4d415f9922a0e7ae31b0
 
 COCOAPODS: 1.4.0
