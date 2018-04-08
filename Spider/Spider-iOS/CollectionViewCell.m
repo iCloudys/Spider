@@ -7,6 +7,7 @@
 
 #import "CollectionViewCell.h"
 #import <UIImageView+WebCache.h>
+#import <UIView+WebCache.h>
 
 @interface CollectionViewCell()
 @property (nonatomic, strong) UIImageView* imageView;
@@ -21,6 +22,7 @@
         self.imageView = [[UIImageView alloc] init];
         self.imageView.contentMode = UIViewContentModeScaleAspectFill;
         self.imageView.layer.masksToBounds = YES;
+        [self.imageView sd_setShowActivityIndicatorView:YES];
         [self.contentView addSubview:self.imageView];
     }
     return self;

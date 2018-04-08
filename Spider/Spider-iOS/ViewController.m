@@ -28,6 +28,7 @@ UICollectionViewDelegateFlowLayout>
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.hidesBarsOnSwipe = YES;
     
     self.urls = [NSMutableArray array];
     [self.view addSubview:self.collectionView];

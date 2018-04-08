@@ -42,7 +42,7 @@
 
 - (void)matchesStringInHtml:(NSString*)html{
     WeakSelf;
-        
+
     NSRegularExpression* expression = [NSRegularExpression regularExpressionWithPattern:self.option.pattern
                                                                                 options:NSRegularExpressionCaseInsensitive
                                                                                   error:nil];
