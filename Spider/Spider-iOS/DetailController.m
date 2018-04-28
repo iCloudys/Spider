@@ -16,9 +16,7 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    
-    self.navigationController.hidesBarsOnTap = YES;
+    self.view.backgroundColor = [UIColor blackColor];
     
     self.imageView = [[UIImageView alloc] init];
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;

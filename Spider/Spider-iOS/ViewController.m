@@ -28,7 +28,7 @@ UICollectionViewDelegateFlowLayout>
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.hidesBarsOnSwipe = YES;
+    self.navigationController.navigationBar.translucent = YES;
     
     self.urls = [NSMutableArray array];
     [self.view addSubview:self.collectionView];
@@ -40,12 +40,12 @@ UICollectionViewDelegateFlowLayout>
     //准备目标网址
     option.website = @"https://www.enterdesk.com";
     
-    option.pattern = @"https?://.+?.(jpg|png)";
+    option.pattern = @"(?<=(src=\"))https?://.+?.(jpg|png)";
     
     //处理回调，当成功抓取一个内容之后，我们就把他拼接到textView的底部
     WeakSelf;
-    option.progress = ^(NSString *url) {
-        [weakSelf appendUrl:url];
+    option.complete = ^(NSArray<NSString *>* urls) {
+        [weakSelf appendUrls:urls];
     };
     
     //初始化爬虫类
@@ -55,23 +55,26 @@ UICollectionViewDelegateFlowLayout>
     [self.spider start];
 }
 
-- (void)appendUrl:(NSString*)url{
-    if (url.length > 0) {
+- (void)appendUrls:(NSArray<NSString *>*)urls{
+    
+    if (urls.count > 0) {
         WeakSelf;
-        [self.collectionView performBatchUpdates:^{
-            [weakSelf.urls addObject:url];
-            
-            NSIndexPath* indexPath = [NSIndexPath indexPathForItem:weakSelf.urls.count - 1 inSection:0];
-            
-            [weakSelf.collectionView insertItemsAtIndexPaths:@[indexPath]];
-            
-        } completion:^(BOOL finished) {
-            if (finished) {
-                NSIndexPath* indexPath = [NSIndexPath indexPathForItem:weakSelf.urls.count - 1 inSection:0];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.collectionView performBatchUpdates:^{
+                
+                NSMutableArray<NSIndexPath*>* idxs = [NSMutableArray array];
+                
+                for (int i = 0; i < urls.count; i ++) {
+                    NSIndexPath* idx = [NSIndexPath indexPathForItem:weakSelf.urls.count + i inSection:0];
+                    [idxs addObject:idx];
+                }
+                
+                [weakSelf.urls addObjectsFromArray:urls];
 
-                [weakSelf.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionBottom animated:YES];
-            }
-        }];
+                [weakSelf.collectionView insertItemsAtIndexPaths:idxs];
+                
+            } completion: NULL];
+        });
     }
 }
 
@@ -108,7 +111,7 @@ UICollectionViewDelegateFlowLayout>
     CGFloat w = (CGRectGetWidth(collectionView.frame) -
                  layout.minimumInteritemSpacing -
                  layout.sectionInset.left -
-                 layout.sectionInset.right) / 2 - 0.5;
+                 layout.sectionInset.right) / 8 - 0.5;
     
     return CGSizeMake(w, w);
 }

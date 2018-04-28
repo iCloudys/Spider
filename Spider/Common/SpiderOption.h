@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 typedef void(^SpiderProgressHander)(NSString* url);
+typedef void(^SpiderCompleteHander)(NSArray<NSString*>* urls);
 
 @interface SpiderOption : NSObject
 
@@ -22,8 +23,13 @@ typedef void(^SpiderProgressHander)(NSString* url);
 @property (nonatomic, copy) NSString* pattern;
 
 /**
- 抓取数据回调
+ 抓取单个数据回调
  */
 @property (nonatomic, copy) SpiderProgressHander progress;
+
+/**
+ 每个Url抓取完成回调
+ */
+@property (nonatomic, copy) SpiderCompleteHander complete;
 
 @end

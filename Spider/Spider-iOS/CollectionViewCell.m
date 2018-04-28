@@ -22,7 +22,7 @@
         self.imageView = [[UIImageView alloc] init];
         self.imageView.contentMode = UIViewContentModeScaleAspectFill;
         self.imageView.layer.masksToBounds = YES;
-        [self.imageView sd_setShowActivityIndicatorView:YES];
+        self.imageView.backgroundColor = [UIColor lightGrayColor];
         [self.contentView addSubview:self.imageView];
     }
     return self;
@@ -33,9 +33,18 @@
     self.imageView.frame = self.contentView.bounds;
 }
 
+- (void)prepareForReuse{
+    [super prepareForReuse];
+    self.imageView.image = nil;
+}
+
 - (void)setUrl:(NSString *)url{
     _url = url.copy;
-    [self.imageView sd_setImageWithURL:[NSURL URLWithString:url]];
+    
+    __weak typeof(self) wSelf = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [wSelf.imageView sd_setImageWithURL:[NSURL URLWithString:url]];
+    });
 }
 
 @end
