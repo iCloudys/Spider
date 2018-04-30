@@ -9,13 +9,4 @@
 
 @implementation SpiderOption
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        self.pattern = @"https?://.+?.(jpg|png)";
-    }
-    return self;
-}
-
 @end

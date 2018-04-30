@@ -59,6 +59,7 @@ UICollectionViewDelegateFlowLayout>
     
     if (urls.count > 0) {
         WeakSelf;
+        
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.collectionView performBatchUpdates:^{
                 

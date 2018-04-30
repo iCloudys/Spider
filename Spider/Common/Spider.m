@@ -29,15 +29,29 @@
         _sourceUrl = [NSMutableOrderedSet orderedSet];
         
         _finashUrl = [NSMutableOrderedSet orderedSet];
+        
+        _imgExpression = [NSRegularExpression regularExpressionWithPattern:option.pattern
+                                                                   options:NSRegularExpressionCaseInsensitive
+                                                                     error:nil];
+        
+        _urlExpression = [NSRegularExpression regularExpressionWithPattern:@"https?:.+?.html"
+                                                                   options:NSRegularExpressionCaseInsensitive
+                                                                     error:nil];
+        
     }
     return self;
 }
 
 - (void)start{
     [self loadUrl:self.option.website];
+    
+    
+
 }
 
 - (void)loadUrl:(NSString*)urlString{
+    
+    NSLog(@"加载:%@",urlString);
     
     WeakSelf;
     urlString = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
@@ -87,25 +101,12 @@
 
 - (void)fetchImgWithHtml:(NSString*)html{
     
-    if (!_imgExpression) {
-        _imgExpression = [NSRegularExpression regularExpressionWithPattern:self.option.pattern
-                                                                   options:NSRegularExpressionCaseInsensitive
-                                                                     error:nil];
-    }
-    
     NSArray<NSString*>* strings = [self fetchStringsWithHtml:html expression:_imgExpression];
 
     self.option.complete ? self.option.complete(strings) : nil;
 }
 
 - (void)fetchUrlWithHtml:(NSString*)html{
-    NSString* pattern = @"https?:.+?.html";
-    
-    if (!_urlExpression) {
-        _urlExpression = [NSRegularExpression regularExpressionWithPattern:pattern
-                                                                   options:NSRegularExpressionCaseInsensitive
-                                                                     error:nil];
-    }
     
     NSArray<NSString*>* strings = [self fetchStringsWithHtml:html expression:_urlExpression];
     
