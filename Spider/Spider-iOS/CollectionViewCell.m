@@ -7,7 +7,6 @@
 
 #import "CollectionViewCell.h"
 #import <UIImageView+WebCache.h>
-#import <UIView+WebCache.h>
 
 @interface CollectionViewCell()
 @property (nonatomic, strong) UIImageView* imageView;
@@ -43,7 +42,11 @@
     
     __weak typeof(self) wSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        [wSelf.imageView sd_setImageWithURL:[NSURL URLWithString:url]];
+        [wSelf.imageView sd_setImageWithURL:[NSURL URLWithString:url] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+            if (error) {
+                NSLog(@"%@[%@]",error,imageURL);
+            }
+        }];
     });
 }
 

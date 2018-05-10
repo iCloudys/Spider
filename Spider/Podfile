@@ -10,7 +10,8 @@ target 'Spider-iOS' do
   # use_frameworks!
 
   # Pods for Spider-iOS
-
+  pod 'AFNetworking'
+  pod 'SDWebImage'
 
 end
 
@@ -19,5 +20,6 @@ target 'Spider-Mac' do
   # use_frameworks!
 
   # Pods for Spider-Mac
-
+  pod 'AFNetworking'
+  pod 'SDWebImage'
 end

@@ -38,11 +38,13 @@ UICollectionViewDelegateFlowLayout>
     SpiderOption* option = [[SpiderOption alloc] init];
     
     //准备目标网址
-    option.website = @"https://www.enterdesk.com";
+    option.website = @"http://www.nipic.com";
     
-    option.pattern = @"(?<=(src=\"))https?://.+?.(jpg|png)";
+    option.pattern = @"(?<=(src=\"))https?://(.+?)(jpg|png|gif)(?=\")";
     
-    //处理回调，当成功抓取一个内容之后，我们就把他拼接到textView的底部
+    option.maxDepth = 1;
+    
+    //处理回调，
     WeakSelf;
     option.complete = ^(NSArray<NSString *>* urls) {
         [weakSelf appendUrls:urls];

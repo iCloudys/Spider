@@ -22,6 +22,11 @@ typedef void(^SpiderCompleteHander)(NSArray<NSString*>* urls);
 @property (nonatomic, copy) NSString* pattern;
 
 /**
+ 最大抓取深度 默认 NSUIntegerMax
+ */
+@property (nonatomic, assign) NSUInteger maxDepth;
+
+/**
  Url抓取完成回调
  */
 @property (nonatomic, copy) SpiderCompleteHander complete;

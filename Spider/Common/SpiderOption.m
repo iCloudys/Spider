@@ -9,4 +9,12 @@
 
 @implementation SpiderOption
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.maxDepth = NSUIntegerMax;
+    }
+    return self;
+}
 @end
